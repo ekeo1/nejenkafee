@@ -1,7 +1,8 @@
 
 *{
     box-sizing: border-box;
-    font-family: "Judson-Bold", Helvetica;
+    /*font-family: */
+    font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: 700;
     scroll-behavior: smooth;
 }
