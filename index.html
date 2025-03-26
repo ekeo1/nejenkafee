@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/src/logo.jpg" type="image/x-icon" class="favicon">
+    <title>Nejen kafe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="userSelectNone">
+            <div id="logo-container" class="pointerEventNone">
+                <picture>
+                    <source srcset="/src/logo.webp" type="image/webp" id="logo" alt="Logo" class="pointerEventNone">
+                    <img src="/src/logo.jpg"  alt="Logo" id="logo" class="pointerEventNone">
+                </picture>
+                
+            </div>
+            <div>
+            </div>
+            <picture>
+                <img src="/src/menu.png" alt="Menu" id="menuIcon" onclick="menu()">
+            </picture>
+            <div id="navnav">
+                
+                <a href="#home">ÚVOD</a>
+                <a href="#about">O NÁS</a>
+                <a href="#ourPastry">NAŠE PEČIVO</a>
+                <a href="#ourShops">PROVOZY</a>
+                <a href="#contact">KONTAKT</a>
+            </div>
+            <div id="navnavnav">
+                
+                <a href="#home">ÚVOD</a>
+                <a href="#about">O NÁS</a>
+                <a href="#ourPastry">NAŠE PEČIVO</a>
+                <a href="#ourShops">PROVOZY</a>
+                <a href="#contact">KONTAKT</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1 class="home-info" id="nejenkafe">Nejen kafe.</h1>
+            <h3 class="home-info" id="nejenkafeInfo">Pečivo, snídaně, obědy, a víkendové brunch</h2>
+                <a href="#about" id="moreA"><div class="home-info userSelectNone" id="more">Více</div></a>
+        </section>
+        <section id="about">
+            <h2 class="sub-heading">O NÁS</h2>
+            <div id="aboutInfo">Jsme bistro s vlastní pekárnou. <br> Každý den pečeme kváskové chleby, slané a sladké
+                pečivo a také místo, kam si můžete zajít na snídani, oběd nebo víkendový brunch. <br>
+                Spolupracujeme s Libereckou pražírnou Nordbeans.
+            </div>
+            <div id="openingHours">
+                PONDĚLÍ - NEDĚLE 7:00-17:00 <br>
+                SNÍDANĚ 7:00-11:00 <br>
+                OBĚDY 11:00-14:00 <br>
+                VÍKENDOVÝ BRUNCH 7:00-14:00
+            </div>
+        </section>
+        <section class="userSelectNone pointerEventNone">
+            <picture>
+                <source srcset="/src/IMG_3855_jpg.webp" type="image/webp" alt="Ilustrační foto" class="ourPastryPhoto userSelectNone pointerEventNone" id="photo">
+                <img src="/src/IMG_3855_jpg.jpeg"  alt="Ilustrační foto" id="photo" class="ourPastryPhoto userSelectNone pointerEventNone">
+            </picture>
+            
+        </section>
+        <section id="ourPastry">
+            <h2 class="sub-heading">NAŠE PEČIVO</h2>
+            <div class="pastry-container">
+                <div class="pastry-type">
+                    <picture>
+                        <source srcset="/src/DSC01491.webp" alt="Náš pečený chléb" type="image/webp" class="ourPastryPhoto userSelectNone pointerEventNone">
+                        <img src="/src/DSC01491.jpeg"  alt="Náš pečený chléb" class="ourPastryPhoto userSelectNone pointerEventNone">
+                    </picture>
+                    <h3>KVÁSKOVÉ CHLEBY</h3>
+                    <div class="pastry-info">
+                        Každý den máme na výběr z několika druhů naších kváskových chlebů. V nabídce máme kromě chlebů i
+                        sladké a slané pečivo.
+                    </div>
+                </div>
+                <div class="pastry-type">
+                    <picture>
+                        <source srcset="/src/DSC01431.webp" type="image/webp" alt="Naše sladké pečivo" class="ourPastryPhoto userSelectNone pointerEventNone">
+                        <img src="/src/DSC01431.jpeg" alt="Naše sladké pečivo" class="ourPastryPhoto userSelectNone pointerEventNone">
+                      </picture>
+                    <h3>SLADKÉ PEČIVO</h3>
+                    <div class="pastry-info">
+                        Denně v nabídce plněné croissanty, kynuté pečivo, koláčky nebo páje.
+                    </div>
+                </div>
+                <div class="pastry-type">
+                    <picture>
+                        <source srcset="/src/DSC01445.webp" type="image/webp" alt="Naše pečené cookies" class="ourPastryPhoto userSelectNone pointerEventNone">
+                        <img src="/src/DSC01445.jpeg"  alt="Naše pečené cookies" class="ourPastryPhoto userSelectNone pointerEventNone">
+                    </picture>
+                    
+                    <h3>COOKIES A DORTY</h3>
+                    <div class="pastry-info">
+                        V nabídce námi dělané cookie a dorty
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section id="ourShops">
+            <h2 class="sub-heading">PROVOZY</h2>
+            <div class="sub-container">
+                <div class="shop">
+                    <picture>
+                        <source srcset="/src/IMG_0639.webp" type="image/webp" alt="" class="userSelectNone pointerEventNone">
+                        <img src="/src/IMG_0639.jpeg"  alt="" id="shopPhoto" class="userSelectNone pointerEventNone">
+                    </picture>
+                        
+                    <div>
+                        <h3>NEJEN KAFE</h3>
+                        <p>Zajít můžete na snídani, oběd, brunch nebo pro pečivo foto.</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <picture>
+                        <source srcset="/src/IMG_2100.webp" type="image/webp" alt="" class="userSelectNone pointerEventNone">
+                        <img src="/src/IMG_2100.jpeg"  alt="" id="shopPhoto" class="userSelectNone pointerEventNone">
+                    </picture>
+                    
+                    <div>
+                        <h3>NEJEN KAFE 2</h3>
+                        <p>Zde pečeme. Prostor slouží i jako prodejna a bistro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container">
+                <div class="shop">
+                    <picture>
+                        <source srcset="/src/IMG_1876.webp" type="image/webp" alt="" class="userSelectNone pointerEventNone">
+                        <img src="/src/IMG_1876.jpeg"  alt="" id="shopPhoto" class="userSelectNone pointerEventNone">
+                    </picture>
+                    
+                    <div>
+                        <h3>NEJEN KAFE A CHLEBA</h3>
+                        <p>Boleslavská prodejna pečiva.</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <picture>
+                        <source srcset="/src/IMG_1876.webp" type="image/webp" alt="" class="userSelectNone pointerEventNone">
+                        <img src="/src/IMG_1876.jpeg"  alt="" id="shopPhoto" class="userSelectNone pointerEventNone">
+                    </picture>
+                    <div>
+                        <h3>VELKOOBCHODNÍ PRODEJ A ROZVOZ PEČIVA</h3>
+                        <p>Pokud zvažujete o odběru našeho pečiva k Vám do podniku, kontaktujte nás.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="sub-heading">KONTAKT</h2>
+            <div class="contact-container">
+                <div class="contact-type">
+                    <h3>SOCIÁLNÍ SÍTĚ</h3>
+                    <div class="contact-info">
+                        <div><img src="/src/instagram.png"  alt="" id="mail"><a href="https://www.instagram.com/nejenkafe/" target="_blank" rel="noopener noreferrer"> nejenkafe</a></div>
+                        <div><img src="/src/facebook.png"  alt="" id="mail"><a href="https://www.facebook.com/nejenkafe" target="_blank" rel="noopener noreferrer"> Nejen Kafe.</a></div>
+                    </div>
+                </div>
+                <div class="contact-type">
+                    <h3>ZDE NÁS KONTAKTUJTE</h3>
+                    <div class="contact-info">
+                        <div><img src="/src/mail.png"  alt="" id="mail"> <a href="mailto:nejenkafe@email.cz">nejenkafe@email.cz</a></div>
+                        <div><img src="/src/telephone.png"  alt="" id="mail"><span> Nejen kafe:</span> <a href="tel:+420775312161">775 312 161</a>
+                    </div>
+                    <div><img src="/src/telephone.png"  alt="" id="mail"> <span>Nejen kafe:</span> <a href="tel:+420608426473">608 426 473</a>
+                </div>
+                <div><img src="/src/telephone.png"  alt="" id="mail"> <span>Nejen kafe a chleba:</span> <a href="tel:+420608114779">608 114 779</a>
+            </div>
+            </div>
+            </div>
+            <div class="contact-type">
+                <h3>ADRESY</h3>
+                <div class="contact-info">
+                    <div><span>NEJEN KAFE,</span><a href="https://maps.app.goo.gl/avtQKGE9rpLSdDKMA" target="_blank" rel="noopener noreferrer"> Na Raduči 1449, Mladá Boleslav</a></div>
+                    <div><span>NEJEN KAFE 2,</span><a href="https://maps.app.goo.gl/f7ukz3hLYhbo9c3E8" target="_blank" rel="noopener noreferrer"> Legionářů 63, Mělník</a></div>
+                    <div><span>NEJEN KAFE A CHLEBA,</span><a href="https://maps.app.goo.gl/8PoBV4CRXNYqeUZX6" target="_blank" rel="noopener noreferrer"> Václava Klementa 35, Mladá Boleslav</a></div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 Nejen kafe</p>
+        <p>Tento web vytvořil <a href="">Tvrdý Šimon</a></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

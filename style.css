@@ -1,0 +1,704 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Judson-Bold", Helvetica;
+    font-weight: 700;
+    scroll-behavior: smooth;
+}
+
+#menuIcon{
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    display: none;
+    width: 50px;
+}
+
+.pointerEventNone{
+    pointer-events: none;
+}
+
+.userSelectNone{
+    user-select: none;
+}
+
+body{
+    background-color: #EDDCD5; 
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px;
+    font-size: 28px;
+    
+}
+
+nav a{
+    color: #5B493F;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #977663
+}
+
+#logo-container {
+    position: absolute;
+    left: 20px; 
+    top: 5px; 
+    z-index: 3;
+}
+
+#logo {
+    width: 150px;
+    border-radius: 100px;
+}
+
+#navnav {
+    display: flex;
+    gap: 120px;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+#navnavnav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url(/src/IMG_4560.webp);
+    background-position: center 10%;
+    background-size: cover;
+    height: 882px;
+    text-align: center;
+    align-items: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/src/IMG_4560.webp);
+    background-position: center 10%;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 1;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.home-info{
+    position: relative;
+    z-index: 3; 
+    color: #EDDCD5;
+}
+
+#nejenkafe{
+    font-size: 128px;
+    margin-bottom: 10px;
+}
+
+#nejenkafeInfo{
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+#more{
+    font-size: 25px;
+    padding: 20px 45px;
+    background-color: rgba(151, 118, 99, 50%);
+    border-radius: 15px;
+}
+
+#more:hover{
+    cursor: pointer;
+    background-color: rgba(151, 118, 99, 60%);
+}
+
+#about{
+    padding: 40px 250px 40px 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: #5B493F;
+}
+
+.sub-heading{
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+#aboutInfo{
+    font-size: 28px;
+    line-height: 50px;
+}
+
+#openingHours{
+    margin-top: 50px;
+    color: #977663;
+    font-size: 28px;
+    line-height: 70px;
+}
+
+#photo{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    object-position: center 80%;
+    margin-bottom: 30px;
+}
+
+#ourPastry, #ourShops, #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #5B493F;
+    padding: 0px 150px;
+    padding-bottom: 80px;
+}
+
+#ourShops, #contact{
+    padding: 40px 250px;
+    margin-bottom: 30px;
+}
+
+hr{
+    border-color: #5B493F;
+}
+
+.pastry-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pastry-type{
+    background-color: #FCECE6;
+    width: 30%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+#ourPastry img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;   
+}
+
+.ourPastryPhoto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#ourPastry h3{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#ourShops h3{
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#contact h3{
+    position: relative;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pastry-info{
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #FCECE6;
+}
+
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.shop{
+    display: flex;
+    background-color: #FCECE6;
+    border-radius: 10px;
+    width: 45%;
+    height: 300px;
+    text-align: center;
+}
+
+.shop picture{
+    display: flex;
+    width: 50%;
+}
+
+
+#shopPhoto{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.shop div{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop p{
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.contact-info{
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.contact-type{
+    background-color: #FCECE6;
+    width: 28%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #977663;
+    color:  #5B493F;
+    text-align: center;
+    padding: 2px;
+    line-height: 4px;
+}
+
+footer a{
+    color: #5B493F;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #FCECE6;
+}
+
+footer p:nth-of-type(2) {
+    font-size: x-small;
+}
+
+#mail{
+    width: 20px;
+}
+
+.contact-type span{
+    color: #977663;
+}
+
+.contact-info a{
+    color: #5B493F;
+    text-decoration: none;
+}
+
+.contact-info a:hover{
+    color: #977663;
+    text-decoration: none;
+}
+
+.contact-info a:active{
+    color: #5B493F;
+    text-decoration: none;
+}
+
+#moreA{
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    #navnav{
+        display: none;
+    }
+    #logo{
+        width: 120px;
+    }
+
+    #menuIcon{
+        display: block;
+    }
+
+    #nejenkafe{
+        font-size: 70px;
+    }
+
+    #nejenkafeInfo{
+        font-size: 20px;
+    }
+
+    #more{
+        font-size: 18px;
+        padding: 20px 35px;
+    }
+
+    #about{
+        padding: 40px 10px;
+    }
+    .sub-heading{
+        font-size: 45px;
+    }
+    #aboutInfo{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #openingHours{
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    #photo{
+        height: 30vh;
+    }
+
+    #ourPastry, #ourShops, #contact{
+        padding: 0;
+        margin: auto 15px;
+    }
+
+    #ourPastry img{
+        border-radius: 0;
+    }
+
+    .pastry-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pastry-container{
+        flex-direction: column;
+    }
+
+    .pastry-info{
+        font-size: 18px;
+    }
+
+    #ourPastry h3, #ourShops h3, #contact h3{
+        font-size: 22px;
+    }
+
+    .sub-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .shop{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 220px;
+    }
+
+    #shopPhoto{
+        height: 220px;
+    }
+
+    #ourShops h3{
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .shop p{
+        font-size: 15px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+  }
+
+  
+@media(max-width: 1090px) {
+    #menuIcon{
+        display: block;
+    }
+    #navnav{
+        display: none;
+    }
+
+    #nejenkafe{
+        font-size: 110px;
+    }
+
+    #nejenkafeInfo{
+        font-size: 27px;
+    }
+
+    #more{
+        font-size: 27px;
+        padding: 20px 40px;
+    }
+
+    #about{
+        padding: 40px 10px;
+    }
+    .sub-heading{
+        font-size: 50px;
+    }
+    #aboutInfo{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #openingHours{
+        font-size: 25px;
+        line-height: 70px;
+    }
+
+    #photo{
+        height: 40vh;
+    }
+
+    #ourPastry, #ourShops, #contact{
+        padding: 0;
+        margin: auto 15px;
+    }
+
+    .pastry-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pastry-container{
+        flex-direction: column;
+    }
+
+    .pastry-info{
+        font-size: 22px;
+    }
+
+    #ourPastry h3, #ourShops h3, #contact h3{
+        font-size: 25px;
+        padding-top: 5px;
+    }
+
+    .sub-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .shop{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 220px;
+    }
+
+    #shopPhoto{
+        height: 220px;
+    }
+
+    
+    .shop p{
+        font-size: 17px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+  }
+
+  @media (max-width: 1090px) {
+    #navnav{
+        display: none;
+    }
+    #mediaIcon{
+        display: block;
+    }
+
+    #nejenkafe{
+        font-size: 110px;
+    }
+
+    #nejenkafeInfo{
+        font-size: 27px;
+    }
+
+    #more{
+        font-size: 27px;
+        padding: 20px 40px;
+    }
+
+    #about{
+        padding: 40px 10px;
+    }
+    .sub-heading{
+        font-size: 50px;
+    }
+    #aboutInfo{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #openingHours{
+        font-size: 25px;
+        line-height: 70px;
+    }
+
+    #photo{
+        height: 40vh;
+    }
+
+    #ourPastry, #ourShops, #contact{
+        padding: 0;
+        margin: auto 15px;
+    }
+
+    .pastry-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pastry-container{
+        flex-direction: column;
+    }
+
+    .pastry-info{
+        font-size: 22px;
+    }
+
+    #ourPastry h3, #ourShops h3, #contact h3{
+        font-size: 25px;
+        padding-top: 5px;
+    }
+
+    .sub-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .shop{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 220px;
+    }
+
+    #shopPhoto{
+        height: 220px;
+    }
+
+    
+    .shop p{
+        font-size: 17px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+  }
+
+  @media(max-width: 1770px) {
+    #navnav{
+        gap: 50px;
+        font-size: 28px;
+    }
+
+    #about{
+        padding: 40px 50px;
+    }
+
+    #ourPastry, #ourShops, #contact{
+        padding: 0 50px;
+    }
+
+    .sub-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .shop{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+
+    #shopPhoto{
+        height: 300px;
+    }
+
+
+  }
+
+  
+
+  
+  
